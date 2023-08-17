@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsnovo.css">
+    
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="titulo">Cadastro de livros</h1>
+    </header>
+
+    <div class="tabela">    
+        <input id="nomelivro" placeholder="Nome" type="text">
+        <input id="autorLivro" placeholder="Autor" type="text">
+        <input id="anoLivro" placeholder="Ano" type="text">
+    </div>
+
+    <div class="botoes">
+        <button class="addLivro" onclick="adicionar()">Adicionar Livro</button>
+        <button  class="mLivro" onclick="mostrarLivros()">Mostrar</button>
+    </div>
+
+    <script>
+
+        let biblioteca = [];
+
+        function cadastro(nome, autor, ano) {
+            var livro = {
+                titulo: nome,
+                autor: autor,
+                ano: ano 
+            };
+            biblioteca.push(livro)
+        }
+        function adcionar() {
+            let nome = document.getElementById('nomeLivro').value;
+            let autor = document.getElementById('autorLivro').value;
+            let ano = document.getElementById('anoLivro').value;
+            cadastro(nome, autor, ano);
+        }
+        function mostrarLivros() {
+            console.log(`resultado:${biblioteca[0].titulo}`);
+        }
+    </script>
+</body>
+</html>

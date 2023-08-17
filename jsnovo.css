@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+.titulo {
+    font: 700 35px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#nomelivro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font: 500 20px sans-serif;
+    border-bottom: 1px solid black;
+}
+
+#autorLivro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font: 500 20px sans-serif;
+    border-bottom: 1px solid black;
+}
+
+#anoLivro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;   
+    font: 500 20px sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font: 400 15px sans-serif;
+
+}
+
+
+.botoes .addLivro {
+    margin: 10px;
+}
+
+.botoes .mLivro {
+    margin: 10px;
+}
