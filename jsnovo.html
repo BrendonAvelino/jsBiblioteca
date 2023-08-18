@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biblioteca</title>
     <link rel="stylesheet" href="jsnovo.css">
     
 </head>
@@ -13,38 +13,83 @@
         <h1 class="titulo">Cadastro de livros</h1>
     </header>
 
-    <div class="tabela">    
-        <input id="nomelivro" placeholder="Nome" type="text">
-        <input id="autorLivro" placeholder="Autor" type="text">
-        <input id="anoLivro" placeholder="Ano" type="text">
-    </div>
+    
+    
 
-    <div class="botoes">
-        <button class="addLivro" onclick="adicionar()">Adicionar Livro</button>
-        <button  class="mLivro" onclick="mostrarLivros()">Mostrar</button>
-    </div>
+   <div class="background2">
+        
+        <div class="tabela">
+            <input id="nomeLivro" placeholder="Nome" type="text">
+            <input id="autorLivro" placeholder="Autor" type="text">
+            <input id="anoLivro" placeholder="Ano" type="text">
+        </div>
 
+        <div class="botoes">
+            <button class="addLivro" onclick="adicionar()">Adicionar Livro</button>
+            <button class="mLivro" onclick="mostrarLivros()">Mostrar</button>   
+        </div>
+
+        
+
+        <div id="livros"></div>
+
+    </div>
     <script>
-
         let biblioteca = [];
 
         function cadastro(nome, autor, ano) {
             var livro = {
-                titulo: nome,
+                nome: nome,
                 autor: autor,
-                ano: ano 
+                ano: ano
             };
-            biblioteca.push(livro)
+            biblioteca.push(livro);
         }
-        function adcionar() {
+
+        function adicionar() {
             let nome = document.getElementById('nomeLivro').value;
             let autor = document.getElementById('autorLivro').value;
             let ano = document.getElementById('anoLivro').value;
             cadastro(nome, autor, ano);
         }
+
+
+
+        const booksAndImages = {
+            "Brilho": "Brilho.png",
+            "It a coisa": "it.png",
+            "Zac Power": "ZacPower.png",
+            "Zac Power 2": "ZacPower2.png",
+            "Zac Power 3": "ZacPower3.png",
+            "O Senhor dos Aneis": "Senhor-dos-aneis.png",
+        };
+
+
         function mostrarLivros() {
-            console.log(`resultado:${biblioteca[0].titulo}`);
+            let livrosDiv = document.getElementById('livros');
+            livrosDiv.innerHTML = '';
+
+            if (biblioteca.length === 0) {
+                livrosDiv.innerHTML = 'Biblioteca vazia';
+            } else {
+                for (let i = 0; i < biblioteca.length; i++) {
+                    let livroInfo = document.createElement('div');
+                    livroInfo.style.margin='10px';
+
+                    livroInfo.innerHTML = `
+                        <p>Livro ${i + 1}:</p>
+                        <p>Nome: ${biblioteca[i].nome}</p>
+                        <p>Autor: SENAI${biblioteca[i].autor}</p>
+                        <p>Ano: 2023${biblioteca[i].ano}</p>
+                        <img src="${booksAndImages[biblioteca[i].nome]}" alt="Capa do Livro" style="max-width: 300px; height:300px">
+                    `;
+                    
+                    livrosDiv.appendChild(livroInfo);
+                }
+            }
         }
+        
     </script>
+ 
 </body>
 </html>

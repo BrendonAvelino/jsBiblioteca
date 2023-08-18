@@ -9,15 +9,19 @@ img {
     width: 100%;
 }
 
-
-
-
+.background-imagem {
+    width: 100%;
+    height: 1000px;   
+}
 
 .titulo {
     font: 700 35px sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 60px;
+    background-color:#966f26 ;
+    color: white;
+    margin: 0;
 }
 
 
@@ -26,9 +30,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    
 }
-#nomelivro {
+#nomeLivro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +71,24 @@ img {
 
 .botoes .addLivro {
     margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .botoes .mLivro {
     margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
 }
+
+#livros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font: 400 15px sans-serif;
+    margin-top: 70px;
+}
+
+
+
