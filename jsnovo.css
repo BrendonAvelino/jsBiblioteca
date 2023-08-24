@@ -14,14 +14,31 @@ img {
     height: 1000px;   
 }
 
+body{
+    background-color: rgb(161, 117, 94);
+    
+}
+
+.textolivros {
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    font: 400 20px sans-serif;
+    color: white;
+    border: 2px solid darkseagreen;
+    padding: 35px;
+}
+
 .titulo {
     font: 700 35px sans-serif;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 60px;
-    background-color:#966f26 ;
+    padding: 30px;
+    background-color:#3d240e ;
     color: white;
     margin: 0;
+    
 }
 
 
@@ -30,8 +47,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 50px;
 }
+
 #nomeLivro {
     display: flex;
     justify-content: center;
@@ -39,6 +57,19 @@ img {
     margin-top: 15px;
     font: 500 20px sans-serif;
     border-bottom: 1px solid black;
+
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 #autorLivro {
@@ -48,6 +79,19 @@ img {
     margin-top: 15px;
     font: 500 20px sans-serif;
     border-bottom: 1px solid black;
+
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 #anoLivro {
@@ -57,6 +101,19 @@ img {
     margin-top: 15px;   
     font: 500 20px sans-serif;
     border-bottom: 1px solid black;
+
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botoes {
@@ -73,12 +130,38 @@ img {
     margin: 10px;
     border: 1px solid black;
     padding: 5px;
+
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botoes .mLivro {
     margin: 10px;
     border: 1px solid black;
     padding: 5px;
+
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 #livros {
@@ -88,6 +171,8 @@ img {
     flex-wrap: wrap;
     font: 400 15px sans-serif;
     margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 

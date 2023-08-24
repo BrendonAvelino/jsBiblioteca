@@ -13,27 +13,39 @@
         <h1 class="titulo">Cadastro de livros</h1>
     </header>
 
-    
-    
-
-   <div class="background2">
-        
+        <div class="textolivros">
+            Livros Disponíveis -
+            <br>
+            <br>
+            1. Brilho
+            <br>
+            2. It a coisa
+            <br>
+            3. Zac Power
+            <br>
+            4. Zac Power 2
+            <br>
+            5. Zac Power 3
+            <br>
+            6. O Senhor dos Aneis
+        </div>
         <div class="tabela">
+            
             <input id="nomeLivro" placeholder="Nome" type="text">
             <input id="autorLivro" placeholder="Autor" type="text">
             <input id="anoLivro" placeholder="Ano" type="text">
+
         </div>
 
         <div class="botoes">
             <button class="addLivro" onclick="adicionar()">Adicionar Livro</button>
             <button class="mLivro" onclick="mostrarLivros()">Mostrar</button>   
         </div>
-
         
 
         <div id="livros"></div>
-
-    </div>
+    
+    
     <script>
         let biblioteca = [];
 
@@ -75,7 +87,7 @@
                 for (let i = 0; i < biblioteca.length; i++) {
                     let livroInfo = document.createElement('div');
                     livroInfo.style.margin='10px';
-
+                    livroInfo.style.color='white';
                     livroInfo.innerHTML = `
                         <p>Livro ${i + 1}:</p>
                         <p>Nome: ${biblioteca[i].nome}</p>
